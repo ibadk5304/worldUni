@@ -1,9 +1,39 @@
+#intro-part {
+  background-color: #14ad94;
+}
+
+#intro-part div div {
+  padding-left: 20px;
+}
+
+#intro-part div div h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#intro-part div div p {
+  font-weight: bold;
+  font-size: 15px;
+}
+
 #myDiv {
   margin-top: 10px;
   padding: 15px;
   color: black;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   height: 550px;
+  background-color: #19ad94;
   overflow: auto;
+}
+
+#myDiv div p:hover {
+  background-color: honeydew;
+  cursor: pointer;
+}
+
+#myDiv div p a {
+  text-decoration: none;
+  color: black;
 }
 
 #topTen {
@@ -29,13 +59,7 @@
   font-weight: bold;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
 .dropdown-cont {
-  background-color: #bd1717;
   overflow: auto;
   border: 1px solid #ddd;
   z-index: 1;
@@ -51,22 +75,30 @@
 }
 
 .dropdownC a:hover {
-  background-color: #195155;
+  background-color: #0e4b2e;
   color: white;
   text-decoration: none;
   cursor: pointer;
 }
 
-.show {
-  display: show;
-}
-
 .dropdown-cont {
-  height: 560px;
-  background-color: #adb3be;
+  height: 580px;
 }
 
-#intro-part {
-  background-color: #a1a1c9;
+#stats {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#stats div img {
+  text-align: center;
+}
+
+#stats div h3 {
+  background-color: #2daf88;
+}
+
+footer {
+  background-color: #14ad94;
 }
 /*# sourceMappingURL=main.css.map */
