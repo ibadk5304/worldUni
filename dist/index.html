@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni-Search</title>
+    <link rel="stylesheet" href="/dist/CSS/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="CSS\spin.css">
+    <script src="js\spin.js"></script>
+</head>
+<body>
+  <div id="spin"></div>
+  <!-- This is heading -->
+  <!-- <div class="jumbotron">
+    <h1>World Universities</h1>      
+  </div> -->
+  <header id="intro-part">
+    <div class="row">
+      <div class="col s6">
+        <h2>World Universities</h2>
+        <p>Find UniverSity by searching the country name or directly type the name of unversity.<br>Click over the name of university to view the website.</p>
+      </div>
+      <div class="col s6">
+        <h1>Total World Universities:<span id="uniNumberWorld">0</span></h1>
+      </div>
+    </div>
+  </header>
+
+  
+    <!-- Main page layout -->
+    <div>
+      <div class="row">
+        <div class="col s12 m12 l3">
+          <div id="country-search" class="dropdownC"> 
+            <!-- <button id="myfunctionclick" class="dropbtn">See countries</button> -->
+            <input type="text" placeholder="Search.." id="myInput" class="inputIn">
+            <div id="myDropdown" class="dropdown-cont" ></div>
+          </div>
+        </div>
+        <div class="col s12 m12 l6">
+          <input type="text" placeholder="Search.." id="uniInput" class="inputIn">
+          <div id="topUniDiv">
+            <button type="button" class="btn btn-primary waves-red" id="resetUni">Reset All</button>
+          </div>
+         
+          <div id="myDiv">
+            <div id="Universities"></div>
+          </div>
+        </div>
+        <div class="col s12 m12 l3" id="stats">
+          <div id="topTen"></div>
+          <div id='flag'></div>
+          <p>
+            <span id="uniNumberCountry"></span>
+          </p>  
+        </div>
+      </div>       
+    </div>
+  <footer >
+    <marquee id="marquee">
+      <h1>Final Project: PROG2700/Client Side Programming</h1>
+    </marquee>
+    
+  </footer>
+  
+    <script>        
+        $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+      </script>
+      <script src='https://cdn.jsdelivr.net/npm/kute.js@1.6.6/kute.js'></script>
+      <script src='/dist/js/main.js'></script>
+      <div id="spin"></div>
+</body>
+</html>

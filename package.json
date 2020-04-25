@@ -1,0 +1,24 @@
+{
+  "name": "final-assignment-ibadk5304",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "kute.js": "^1.6.6",
+    "spin.js": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NSCC-Winter2020-PROG2700/final-assignment-ibadk5304.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NSCC-Winter2020-PROG2700/final-assignment-ibadk5304/issues"
+  },
+  "homepage": "https://github.com/NSCC-Winter2020-PROG2700/final-assignment-ibadk5304#readme",
+  "description": ""
+}

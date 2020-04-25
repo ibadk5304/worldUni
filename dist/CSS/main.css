@@ -1,0 +1,72 @@
+#myDiv {
+  margin-top: 10px;
+  padding: 15px;
+  color: black;
+  height: 550px;
+  overflow: auto;
+}
+
+#topTen {
+  font-size: 20px;
+}
+
+.inputIn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("searchicon.png");
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  padding: 14px 10px 12px 45px;
+  border: none;
+  border-radius: 2px;
+  border: 2px solid #0a0909;
+}
+
+.inputIn:focus {
+  outline: 3px solid #fdf3f3;
+  background-color: #ceb5e7;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-cont {
+  background-color: #bd1717;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-cont a {
+  color: black;
+  padding: 12px 16px;
+  font-weight: bold;
+  font-size: medium;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownC a:hover {
+  background-color: #195155;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.show {
+  display: show;
+}
+
+.dropdown-cont {
+  height: 560px;
+  background-color: #adb3be;
+}
+
+#intro-part {
+  background-color: #a1a1c9;
+}
+/*# sourceMappingURL=main.css.map */
