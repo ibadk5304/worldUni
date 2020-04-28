@@ -107,7 +107,7 @@
         var imgplace = document.getElementById('flag');
         var x = document.createElement("IMG");
         imgplace.innerHTML =  x.setAttribute("src","flags/"+currentCountry+".png");
-        imgplace.innerHTML = `<img src="/flags/${currentCountry}.png" />`;
+        imgplace.innerHTML = `<img src="flags/${currentCountry}.png" />`;
       }
       
 
