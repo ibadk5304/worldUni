@@ -20,11 +20,20 @@
 
       var totalWorldUniversities=0;
 
-      data.map(function(currentValue){          
+
+      // var newArray = [1,2,3,4,5].map(function(number){
+      //   return number + 1
+      // })
+
+      data.forEach(function(currentValue){          
           totalWorldUniversities++;
           var same = countries.some(myFunction);
           function myFunction(value) {return value == currentValue.country;}
           if(same == false){countries.push(currentValue.country)}
+
+
+          //return something new for the new array
+          //return something;
 
       })
 
@@ -72,8 +81,14 @@
               $("#Universities").empty(); 
               $("#uniNumberCountry").empty();
               var b =this.text;
-              var countUni=0;        
-              d.filter(function(currentValue){if(currentValue.country == b){
+              var countUni=0;     
+              
+              
+              var newArray = [1,2,3,4,5].filter(function(number){
+                return number % 2 == 0; //true or false
+              })
+
+              d.forEach(function(currentValue){if(currentValue.country == b){
                 countUni++;
                 $("#Universities").append("<p class='uni'><a href='"+currentValue.web_pages[0]+"' target='_blank' >"+currentValue.name+"</a></p>");
               }});
@@ -91,7 +106,7 @@
       function showFlag(currentCountry){        
         var imgplace = document.getElementById('flag');
         var x = document.createElement("IMG");
-        imgplace.innerHTML =  x.setAttribute("src","/flags/"+currentCountry+".png");
+        imgplace.innerHTML =  x.setAttribute("src","flags/"+currentCountry+".png");
         imgplace.innerHTML = `<img src="/flags/${currentCountry}.png" />`;
       }
       
@@ -102,9 +117,18 @@
         var uniNumberEachCountryArray = [];                          
         var topTenArray=[];
         var topTenNumbers=[];
+
+        // var uniNumberEachCountryArray = data.filter(function(item){
+        //   return item.country == countries[i]
+        // })
+
         for(var i=0;i<countries.length; i++){
           var count = 0;
-          data.filter(function(currentValue){if(currentValue.country == countries[i]){count++;}})
+          data.forEach(function(currentValue){
+            if(currentValue.country == countries[i]){
+              count++;
+            }
+          })
           uniNumberEachCountryArray.push([countries[i],count]);
         }        
         uniNumberEachCountryArray.sort(sortFunction);
