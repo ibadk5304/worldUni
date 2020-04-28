@@ -10,7 +10,6 @@
     
     
       var realData= data;
-      console.log(realData);
       var countries =[];
       var universities=[];
      
@@ -138,7 +137,6 @@
         }
         for(var i=uniNumberEachCountryArray.length-1; i>=uniNumberEachCountryArray.length-11;i--)
         {topTenArray.push(uniNumberEachCountryArray[i]);}
-        console.log(topTenArray);
         var topTen = "<h3>Top ten Countries</h3>";
 
         for(var i=0;i<topTenArray.length;i++)
