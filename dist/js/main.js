@@ -92,9 +92,9 @@
                 $("#Universities").append("<p class='uni'><a href='"+currentValue.web_pages[0]+"' target='_blank' >"+currentValue.name+"</a></p>");
               }});
               var percentage = ((countUni/totalWorldUniversities)*100).toFixed(2);
-              $("#uniNumberCountry").append("<h1>Country Name: "+b+"</h1>");
-              $("#uniNumberCountry").append("<h4>Number of University: "+countUni+"</h4>");
-              $("#uniNumberCountry").append("<h4>World Percentage in number: "+percentage+"%</h4>");
+              $("#uniNumberCountry").append("<h5>Country Name: "+b+"</h5>");
+              $("#uniNumberCountry").append("<h6>Number of University: "+countUni+"</h6>");
+              $("#uniNumberCountry").append("<h6>World Percentage in number: "+percentage+"%</h6>");
               showFlag(b); 
               $("#topTen").empty();
               kuteAnimation("stats");
@@ -153,7 +153,7 @@
         KUTE.fromTo(
           '#'+divName, // element
           {translateX:1000, rotateX:0, rotateY:0, rotateZ:0}, // from
-          {translateX:-10, rotateX:0, rotateY:-10, rotateZ:0}, // to
+          {translateX:0, rotateX:0, rotateY:0, rotateZ:0}, // to
           {perspective:400, perspectiveOrigin: 'center top'} // transform options
         ).start();
       }
